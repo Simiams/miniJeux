@@ -1,0 +1,56 @@
+.quizzCard {
+  display: none;
+  margin-top: 1.5rem;
+  border: 4px solid $color-3;
+  box-shadow: -5px -2px 50px $color-1;
+  background: linear-gradient(45deg, $color-2, $color-1);
+  border-radius: $borderRadius;
+  padding: 2px 10px 0 10px;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  img {
+    max-height: 400px;
+    min-height: 250px;
+    backdrop-filter: blur();
+    height: auto;
+    margin-top: 15px;
+    width: auto;
+    max-width: 100%;
+    border: 4px solid $color-1;
+    border-radius: $borderRadius;
+  }
+
+  .answersChoices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .choice {
+    vertical-align: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 1rem;
+    width: 48%;
+    background-color: $color-2;
+    &:hover{
+        background-color: $color-4;
+        color: white;
+    }
+  }
+
+
+  .signature {
+    margin-top: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: .8rem;
+    height: 1.6rem;
+  }
+}

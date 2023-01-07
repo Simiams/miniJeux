@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+$font-JetBrainsMono: monospace;
+
+$color-1: #052643;
+$color-2: #060d2e;
+$color-3: #0e1538;
+$color-4: rgba(38, 54, 109, 0.7);
+$white: #f5f5f5;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 99% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-JetBrainsMono;
+  background: linear-gradient(-45deg, $color-1, $color-2, $color-3, $color-1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: $white;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+}
+
+a:visited {
+  color: $white;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+}
+
+.subtitle{
+  font-size: 1.7em;
+  margin-left: 1.5rem;
+}
+
+img {
+  //overflow: hidden;
+  //backdrop-filter: blur();
+  //draggable: false;
+  //-webkit-user-drag: none;
+  //user-select: none;
+  //-moz-user-select: none;
+  //-webkit-user-select: none;
+  //-ms-user-select: none;
+}

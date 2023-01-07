@@ -1,0 +1,20 @@
+.minijeu_home {
+  margin-top: 85px;
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  .minijeux {
+    margin: 2.5rem 5%;
+    background: $color-1;
+    border-radius: $borderRadius;
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,40 @@
+.minijeu_navbar {
+
+
+
+  ul {
+    background-color: $color-3;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 5%;
+
+    li {
+      float: left;
+    }
+
+    li:last-child {
+      float:right;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+      @media screen and (max-width: 1250px) {
+        font-size: 1rem !important;
+      }
+    }
+
+    li a:hover {
+      background-color: $color-4;
+    }
+  }
+}
+

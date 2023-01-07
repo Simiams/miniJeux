@@ -1,0 +1,26 @@
+.scores {
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 1250px) {
+    display: none !important;
+  }
+  .score {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+
+    p{
+      font-size: 1.35rem;
+      margin: auto 1rem;
+      text-align: center;
+      vertical-align: center;
+    }
+
+    img {
+      margin: auto;
+      width: 45px;
+    }
+    
+  }
+}
