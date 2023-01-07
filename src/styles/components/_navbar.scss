@@ -1,8 +1,9 @@
 .minijeu_navbar {
-
-
-
+  @media screen and (max-width: 420px) {
+    display: none !important;
+  }
   ul {
+    z-index: 1;
     background-color: $color-3;
     list-style-type: none;
     margin: 0;
